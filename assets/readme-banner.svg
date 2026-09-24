@@ -1,0 +1,182 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="380"
+  viewBox="0 0 1200 380"
+  fill="none"
+  role="img"
+  aria-labelledby="title description"
+>
+  <title id="title">LiveTranslate — Feel at home, anywhere.</title>
+  <desc id="description">
+    A warm sand, teal, and coral banner with a sound-wave mark and overlapping
+    Thai and English greeting cards.
+  </desc>
+  <defs>
+    <linearGradient
+      id="sky"
+      x1="0"
+      y1="0"
+      x2="1200"
+      y2="380"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#E3F2E9" />
+      <stop offset="0.56" stop-color="#FFF7ED" />
+      <stop offset="1" stop-color="#FBE0C9" />
+    </linearGradient>
+    <linearGradient
+      id="sea"
+      x1="0"
+      y1="320"
+      x2="1200"
+      y2="380"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#B5DCD0" />
+      <stop offset="1" stop-color="#DBE9D7" />
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="380" rx="28" /></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#sky)" d="M0 0h1200v380H0z" />
+    <circle cx="1046" cy="66" r="111" fill="#F5CA82" opacity="0.55" />
+    <circle cx="1046" cy="66" r="142" stroke="#F0D7AF" stroke-width="1.5" />
+    <path
+      d="M0 330C210 270 304 345 493 327s316-67 492-28 181 22 215 8v73H0z"
+      fill="#F5D6BC"
+      opacity="0.7"
+    />
+    <path d="M0 337c240 54 369-31 563-8s353 44 637 2v49H0z" fill="url(#sea)" />
+    <rect x="60" y="58" width="62" height="62" rx="20" fill="#086D74" />
+    <g stroke="#F7EDC8" stroke-width="5" stroke-linecap="round">
+      <path d="M77 82v14M87 74v30M97 79v20M107 84v10" />
+    </g>
+    <text
+      x="140"
+      y="83"
+      fill="#466765"
+      font-family="Arial, sans-serif"
+      font-size="13"
+      font-weight="700"
+      letter-spacing="2.5"
+    >
+      YOUR POCKET TRAVEL COMPANION
+    </text>
+    <text
+      x="140"
+      y="110"
+      fill="#173F43"
+      font-family="Arial, sans-serif"
+      font-size="21"
+    >
+      Conversations across languages.
+    </text>
+    <text
+      x="58"
+      y="207"
+      fill="#173F43"
+      font-family="Arial, sans-serif"
+      font-size="70"
+      font-weight="700"
+      letter-spacing="-3"
+    >
+      LiveTranslate
+    </text>
+    <text
+      x="62"
+      y="259"
+      fill="#466765"
+      font-family="Arial, sans-serif"
+      font-size="30"
+      letter-spacing="-0.5"
+    >
+      Feel at home, anywhere.
+    </text>
+    <g transform="translate(767 84) rotate(-6)">
+      <rect
+        x="3"
+        y="8"
+        width="268"
+        height="140"
+        rx="23"
+        fill="#173F43"
+        opacity="0.06"
+      />
+      <rect width="268" height="140" rx="23" fill="#FFFEF9" stroke="#D4E3D8" />
+      <text
+        x="26"
+        y="37"
+        fill="#59756F"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="2"
+      >
+        A LITTLE HELLO
+      </text>
+      <text
+        x="26"
+        y="100"
+        fill="#173F43"
+        font-family="Tahoma, Arial, sans-serif"
+        font-size="45"
+      >
+        สวัสดี
+      </text>
+      <circle cx="228" cy="85" r="17" fill="#E7F1E7" />
+      <path
+        d="M221 85h14m-5-5 5 5-5 5"
+        stroke="#086D74"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+    <g transform="translate(862 193) rotate(5)">
+      <rect
+        x="3"
+        y="8"
+        width="260"
+        height="130"
+        rx="23"
+        fill="#173F43"
+        opacity="0.06"
+      />
+      <rect width="260" height="130" rx="23" fill="#086D74" />
+      <text
+        x="26"
+        y="35"
+        fill="#C1E7D6"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="2"
+      >
+        A WHOLE NEW WORLD
+      </text>
+      <text
+        x="25"
+        y="95"
+        fill="#FFFAE9"
+        font-family="Arial, sans-serif"
+        font-size="49"
+        font-weight="700"
+        letter-spacing="-1"
+      >
+        Hello.
+      </text>
+      <g stroke-linecap="round" stroke-width="4">
+        <path d="M195 81v9M204 72v27M213 66v39" stroke="#FFAD88" />
+        <path d="M222 76v19M231 81v9" stroke="#F4D18C" />
+      </g>
+    </g>
+    <path
+      d="M706 174v14m-7-7h14M1128 140v14m-7-7h14"
+      stroke="#C87856"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <circle cx="728" cy="277" r="4" fill="#C87856" />
+  </g>
+</svg>
