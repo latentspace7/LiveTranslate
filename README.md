@@ -1,17 +1,32 @@
-<div align="center">
+<p align="center">
+  <img src="assets/readme-banner.svg" alt="LiveTranslate — Feel at home, anywhere. Thai and English greeting cards beside a sound-wave icon." width="100%" />
+</p>
 
-<img src="assets/readme-banner.svg" alt="LiveTranslate — Feel at home, anywhere." width="100%" />
+<p align="center">
+  <strong>LiveTranslate · Your pocket companion for conversations across languages.</strong><br />
+  Live captions for the words around you. Less guessing. More connection.
+</p>
 
-**Your pocket companion for conversations across languages.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&amp;logoColor=white" alt="Python 3.12" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&amp;logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&amp;logoColor=white" alt="TypeScript 5.9" />
+  <img src="https://img.shields.io/badge/FastAPI-Pydantic-009688?logo=fastapi&amp;logoColor=white" alt="FastAPI and Pydantic" />
+</p>
 
-Live captions for the words around you.<br />
-Less guessing. More connection.
+<p align="center">
+  <a href="https://qwen-live-translate.vercel.app"><strong>Open LiveTranslate ↗</strong></a> ·
+  <a href="#the-experience">The experience</a> ·
+  <a href="#start-listening">Start listening</a> ·
+  <a href="#architecture">Architecture</a> ·
+  <a href="#local-setup">Local setup</a>
+</p>
 
-[Open LiveTranslate ↗](https://qwen-live-translate.vercel.app) · [The experience](#the-experience) · [Start listening](#start-listening) · [Local setup](#local-setup) · [Development checks](#development-checks)
-
-**60 text languages** &nbsp; · &nbsp; **29 spoken languages** &nbsp; · &nbsp; **Made for your browser**
-
-</div>
+<p align="center">
+  🌍 <strong>60 text languages</strong> &nbsp; · &nbsp;
+  🔊 <strong>29 spoken languages</strong> &nbsp; · &nbsp;
+  📱 <strong>Made for your browser</strong>
+</p>
 
 ---
 
@@ -25,13 +40,13 @@ It starts with automatic language detection and English text, ready for moments 
 
 ## The experience
 
-|                           | What you get                                                                                      |
-| :------------------------ | :------------------------------------------------------------------------------------------------ |
-| **Read as they speak**    | Original speech and translated text appear live, without waiting for you to press Stop.           |
-| **Follow both languages** | Read the translation alongside the original, with speaker labels to help follow the conversation. |
-| **Listen, if you like**   | Turn on spoken translations for supported languages, or keep things quiet with text only.         |
-| **Keep the useful words** | Copy the conversation or download a text transcript before you leave.                             |
-| **Comfortable on the go** | Large mobile captions, warm colors, and an automatic night theme.                                 |
+|                              | What you get                                                                                      |
+| :--------------------------- | :------------------------------------------------------------------------------------------------ |
+| 🎙️ **Read as they speak**    | Original speech and translated text appear live, without waiting for you to press Stop.           |
+| 💬 **Follow both languages** | Read the translation alongside the original, with speaker labels to help follow the conversation. |
+| 🔊 **Listen, if you like**   | Turn on spoken translations for supported languages, or keep things quiet with text only.         |
+| 📋 **Keep the useful words** | Copy the conversation or download a text transcript before you leave.                             |
+| 🌗 **Comfortable on the go** | Large mobile captions, warm colors, and an automatic night theme.                                 |
 
 ## Start listening
 
@@ -56,8 +71,14 @@ The [frontend](frontend/) uses React 19, TypeScript, Vite 7, and custom CSS. The
 
 ```mermaid
 flowchart LR
-    Browser["Browser: microphone, captions, playback"] <-->|"WebSocket /api/translate"| API["FastAPI: authentication and relay"]
-    API <-->|"Authenticated WebSocket"| Qwen["External: Qwen LiveTranslate"]
+    Browser["Browser<br/>Microphone · captions · playback"] <-->|"WebSocket /api/translate"| API["FastAPI<br/>Authentication · audio relay"]
+    API <-->|"Authenticated WebSocket"| Qwen["Qwen LiveTranslate<br/>External translation service"]
+    classDef browser fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef backend fill:#d1fae5,stroke:#059669,color:#064e3b
+    classDef provider fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class Browser browser
+    class API backend
+    class Qwen provider
 ```
 
 The browser captures microphone audio and keeps transcripts in memory. The backend holds the provider API key and connects to `qwen3.8-livetranslate-flash-realtime`. [Vercel configuration](vercel.json) routes `/api/*` to the backend and serves the frontend separately.
