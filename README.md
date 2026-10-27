@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="https://qwen-live-translate.vercel.app"><strong>Open LiveTranslate ↗</strong></a> ·
+  <a href="#demo">Demo</a> ·
   <a href="#the-experience">The experience</a> ·
   <a href="#start-listening">Start listening</a> ·
   <a href="#architecture">Architecture</a> ·
@@ -29,6 +30,12 @@
 </p>
 
 ---
+
+## Demo
+
+![LiveTranslate demo: live Thai-to-English captions and a transcript download](assets/livetranslate-demo.gif)
+
+A fresh Thai-to-English session through the live Qwen service, followed by a transcript download. Recorded locally using a scripted Thai voice clip as the microphone input.
 
 ## A little hello. A whole new world.
 
