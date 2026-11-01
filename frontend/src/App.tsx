@@ -252,12 +252,7 @@ export default function App() {
       </a>
       <header className="topbar">
         <a className="brand" translate="no" href="/" aria-label="LiveTranslate home">
-          <span className="brand-mark">
-            <span />
-            <span />
-            <span />
-            <span />
-          </span>
+          <img className="brand-mark" src="/favicon.svg" alt="" width="38" height="38" />
           <span>LiveTranslate</span>
         </a>
         <div className="topbar-right">

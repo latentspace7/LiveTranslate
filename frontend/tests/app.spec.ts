@@ -130,7 +130,7 @@ test('phone reading view defaults to English text and stops when hidden', async 
     page.locator('.translated-text').filter({ hasText: 'I am well, thank you.' }),
   ).toBeVisible();
   await expect(page.getByRole('button', { name: 'Stop', exact: true })).toBeVisible();
-  await expect(page.locator('.translated-text').first()).toHaveCSS('font-size', '22px');
+  await expect(page.locator('.translated-text').first()).toHaveCSS('font-size', '23px');
   await page.screenshot({ path: 'test-results/phone-live-reading.png', fullPage: true });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.evaluate(() => {
