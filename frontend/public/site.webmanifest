@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "LiveTranslate",
+  "short_name": "LiveTranslate",
+  "description": "A private space for live conversations across languages.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#260f24",
+  "background_color": "#f3e9da",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
